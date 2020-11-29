@@ -1,0 +1,75 @@
+:root {
+  --width-alertes: 100vw;
+  --width-alerte : 25vw;
+
+  --text-align: center;
+
+  --display:flex;
+  --display-direction:row;
+
+  --padding:10px 0;
+
+  --background-noir : black;
+  --background-rouge: #e74c3c;
+  --background-vert : #2ecc71;
+  --background-orange : #f39c12;
+
+  --couleur-texte : white;
+
+  --police : "Raleway", sans-serif;
+}
+
+body {
+  margin:0;
+}
+
+
+.alerte {
+  width: var(--width-alerte);
+}
+
+div.alerte_info {
+ display: none;
+}
+
+div.alerte:hover .alerte_info {
+  display:block;
+  background-color: var(--background-orange);
+  padding: var(--padding);
+}
+
+
+div.alerte_success {
+ display: none;
+}
+
+div.alerte:hover .alerte_success {
+  display:block;
+  background-color: var(--background-vert);
+  padding: var(--padding);
+}
+
+
+div.alerte_error {
+ display: none;
+}
+
+div.alerte:hover .alerte_error {
+  display:block;
+  background-color: var(--background-rouge);
+  padding: var(--padding);
+}
+
+
+.alertes {
+  width: var(--width-alertes);
+  display: var(--display);
+  flex-direction: var(--display-direction);
+
+  padding: var(--padding);
+  background-color: var(--background-noir);
+
+  text-align: var(--text-align);
+  font-family: var(--police);
+  color: var(--couleur-texte);
+}

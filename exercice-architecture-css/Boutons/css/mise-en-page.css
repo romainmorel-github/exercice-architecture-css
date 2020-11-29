@@ -1,0 +1,58 @@
+:root {
+  --background-turquoise: #1abc9c;
+  --background-blanc : white;
+
+  --bordure-bouton-1 : 0;
+  --bordure-bouton-2 : 1px solid #1abc9c;
+
+  --taille-bordure-bouton :30px;
+
+  --taille-bouton-1 : 25px;
+  --taille-bouton-2 : 15px;
+
+  --police-bouton : "Raleway", sans-serif;
+
+  --texte-blanc : white;
+  --texte-noir : black;
+
+  --padding:10px 30px;
+}
+
+
+.boutons {
+  width:50vw;
+  display: flex;
+  flex-direction: row;
+  margin-top:15px;
+}
+
+
+.bouton_1_texte {
+  font-family: var(--police-bouton);
+  font-size : var(--taille-bouton-1);
+  color: var(--texte-blanc);
+
+  background-color: var(--background-turquoise);
+  border-radius : var(--taille-bordure-bouton);
+  border: var(--bordure-bouton-1);
+
+  padding: var(--padding);
+
+  margin-right:30px;
+}
+
+
+.bouton_2_texte {
+  font-family: var(--police-bouton);
+  font-size : var(--taille-bouton-2);
+  color: var(--texte-noir);
+
+  background-color: var(--background-blanc);
+  border-radius : var(--taille-bordure-bouton);
+  border: var(--bordure-bouton-2);
+
+  padding: var(--padding);
+}
+
+
+

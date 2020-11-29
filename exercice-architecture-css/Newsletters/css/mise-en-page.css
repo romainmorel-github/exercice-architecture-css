@@ -1,0 +1,94 @@
+:root {
+  --width-newsletters: 100vw;
+  --width-texte : 50vw;
+  --width-formulaire: 30vw;
+  --text-align: center;
+
+  --padding:15px 0;
+  --padding-bouton: 5px 15px;
+
+  --margin : 15px auto;
+
+  --background-bleu: #48dbfb;
+  --background-rose : #ff9ff3;
+
+  --bordure-bouton : 1px solid black;
+  --contour-bordure-bouton :5px;
+  --contour-élément : 15px;
+
+  --box-shadow : 5px 5px 10px #bdc3c7;
+
+  --taille-titre : 28px;
+  --taille-texte : 15px;
+  --taille-prix : 22px;
+  --taille-bouton : 12px;
+
+  --police : "Raleway", sans-serif;
+  --police-graisse-black : 800;
+
+  --police-uppercase : uppercase;
+}
+
+body {
+  margin:0;
+}
+
+
+.newsletters_titre {
+  margin: var(--margin);
+  width: var(--width-texte);
+
+  font-family: var(--police);
+  font-size: var(--taille-titre);
+  font-weight: var(--police-graisse-black);
+  
+  text-transform: var(--police-uppercase);
+}
+
+
+.newsletters_description {
+  margin: var(--margin);
+  width: var(--width-texte);
+  
+  font-family: var(--police);
+  font-size: var(--taille-texte);
+}
+
+
+.fiche_produit_prix {
+  margin: var(--margin);
+
+  font-family: var(--police);
+  font-size: var(--taille-prix);
+  font-weight: var(--police-graisse-black);
+}
+
+
+.newsletters_formulaire > div > input {
+  width: var(--width-formulaire);
+}
+
+
+.newsletters_bouton > button {
+  margin: var(--margin);
+  padding: var(--padding-bouton);
+
+  background-color: var(--background-bleu);
+  border: var(--bordure-bouton);
+  border-radius: var(--contour-bordure-bouton);
+
+  font-family: var(--police);
+  font-size: var(--taille-bouton);
+  font-weight: var(--police-graisse-black);
+
+  text-transform: var(--police-uppercase);
+}
+
+
+.newsletters {
+  width: var(--width-newsletters);
+  padding: var(--padding);
+  background-color: var(--background-rose);
+
+  text-align: var(--text-align);
+}
